@@ -15,7 +15,7 @@ img/            → Imagens (fotos geradas por IA + logos em .webp)
 
 Sem build, sem dependências, sem framework: HTML + CSS + JavaScript puro. Basta servir a pasta com qualquer servidor estático (ex.: `python3 -m http.server`) ou abrir os arquivos no navegador.
 
-> **Nota:** `index.html` não tem `<!doctype html>`/`<head>` completo porque foi publicado originalmente como Claude Artifact (que injeta o esqueleto). Para hospedar o site de forma independente, adicione a `index.html` o mesmo doctype/head das outras páginas (ver `sobre.html` como referência).
+O site é publicado via **GitHub Pages** a partir da branch `main` (raiz).
 
 ## Identidade visual
 
