@@ -1,0 +1,134 @@
+<meta charset="utf-8">
+<title>La.rú Arquitetura</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Epilogue:wght@200;300;400;500&display=swap">
+<link rel="stylesheet" href="styles.css">
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="La.rú Arquitetura — início">
+      <img src="img/logo-dark.webp" alt="la.rú arquitetura">
+    </a>
+    <button class="menu-btn" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="index.html" aria-current="page">Início</a>
+      <a href="projetos.html">Projetos</a>
+      <a href="sobre.html">Sobre nós</a>
+      <a class="cta" href="contato.html">Contato</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <h1 class="display">Traço atento à sua forma de viver<span class="dot">.</span></h1>
+        <p class="lead">Projetos conduzidos do estudo à entrega das chaves — com critério, clareza e uma única coordenação do início ao fim.</p>
+        <a class="btn solid" href="projetos.html">Conhecer os projetos <span class="arrow">→</span></a>
+      </div>
+      <div class="hero-img">
+        <div class="hero-slides">
+          <img class="active" src="img/hero.jpg" alt="Sala de estar de apartamento de alto padrão com materiais naturais e luz de fim de tarde">
+          <img src="img/hero2.jpg" alt="Living com painel de madeira ripada e vista para a cidade ao entardecer">
+          <img src="img/hero3.jpg" alt="Lounge corporativo com poltronas curvas e parede de pedra natural">
+          <img src="img/hero4.jpg" alt="Cozinha com ilha de travertino e pendentes de latão sob luz quente">
+          <img src="img/hero5.jpg" alt="Suíte com roupa de cama de linho e cortinas iluminadas pelo pôr do sol">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Projetos</p>
+        <h2 class="h2">Pensado para ser vivido<span class="dot">.</span></h2>
+      </div>
+      <div class="proj-grid">
+        <a class="proj" href="projetos.html">
+          <figure><img src="img/casa.jpg" alt="Casa contemporânea com planos de concreto, brises de madeira e jardim"></figure>
+          <figcaption>
+            <span class="tag">Residencial</span>
+            <span class="title">Casa Jardim</span>
+            <span class="cap">Natureza e materiais que valorizam</span>
+          </figcaption>
+        </a>
+        <a class="proj" href="projetos.html">
+          <figure><img src="img/workplace.jpg" alt="Escritório corporativo com forro de madeira ripada e lounge integrado"></figure>
+          <figcaption>
+            <span class="tag">Corporativo</span>
+            <span class="title">Workplace Vila Olímpia</span>
+            <span class="cap">Um escritório desenhado para a rotina do time</span>
+          </figcaption>
+        </a>
+      </div>
+      <div style="margin-top:48px">
+        <a class="btn" href="projetos.html">Ver todos os projetos <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark cta-band">
+    <div class="wrap">
+      <p class="eyebrow">Próximo projeto</p>
+      <h2 class="h2">Vamos conversar sobre o seu espaço<span class="dot">?</span></h2>
+      <p class="lead">Conte sobre a planta, o local e o que você espera viver ali. A partir disso, montamos um caminho claro — do estudo à entrega.</p>
+      <a class="btn on-dark" href="contato.html">Entrar em contato <span class="arrow">→</span></a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-top">
+      <div>
+        <img src="img/logo-light.webp" alt="la.rú arquitetura">
+        <p style="margin-top:18px;font-size:.92rem;max-width:30em">Arquitetura conduzida por relações de confiança, critérios bem definidos e atenção ao que realmente importa em cada projeto.</p>
+      </div>
+      <div class="f-col">
+        <span class="t">Navegação</span>
+        <a href="index.html">Início</a>
+        <a href="projetos.html">Projetos</a>
+        <a href="sobre.html">Sobre nós</a>
+        <a href="contato.html">Contato</a>
+      </div>
+      <div class="f-col">
+        <span class="t">Contato</span>
+        <span>contato@laruarquitetura.com</span>
+        <span>+55 19 98176-4023</span>
+        <span>São Paulo · SP</span>
+        <a class="ig" href="https://www.instagram.com/la.ruarquitetura/" target="_blank" rel="noopener" aria-label="Instagram da La.rú">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.6" cy="6.4" r="1.3" fill="currentColor" stroke="none"/></svg>
+          Instagram
+        </a>
+      </div>
+    </div>
+    <div class="f-bottom">
+      <span>© 2026 La.rú Arquitetura e Design</span>
+      <span>Laís &amp; Rúbia</span>
+      <span>Desenvolvido por Grid &amp; Grain Creative</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const btn=document.querySelector('.menu-btn'),nav=document.querySelector('.nav');
+  btn.addEventListener('click',()=>{
+    const open=nav.classList.toggle('open');
+    btn.setAttribute('aria-expanded',open);
+  });
+  nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+
+  const slides=document.querySelectorAll('.hero-slides img');
+  if(slides.length>1){
+    let i=0;
+    setInterval(()=>{
+      slides[i].classList.remove('active');
+      i=(i+1)%slides.length;
+      slides[i].classList.add('active');
+    },5500);
+  }
+</script>

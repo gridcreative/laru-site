@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contato — La.rú Arquitetura</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Epilogue:wght@200;300;400;500&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="La.rú Arquitetura — início">
+      <img src="img/logo-dark.webp" alt="la.rú arquitetura">
+    </a>
+    <button class="menu-btn" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="index.html">Início</a>
+      <a href="projetos.html">Projetos</a>
+      <a href="sobre.html">Sobre nós</a>
+      <a class="cta" href="contato.html" aria-current="page">Contato</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-head">
+    <div class="wrap">
+      <p class="eyebrow">Contato</p>
+      <h1 class="display">Vamos conversar sobre o seu projeto<span class="dot">.</span></h1>
+      <p class="lead">Conte sobre a planta, o local e o que você espera viver ali. Respondemos com um caminho claro — e um orçamento alinhado ao seu projeto.</p>
+    </div>
+  </section>
+
+  <section style="padding-top:20px">
+    <div class="wrap contact-grid">
+      <div class="c-list">
+        <div class="c-item">
+          <span class="t">E-mail</span>
+          <span class="v" id="mail-text">contato@laruarquitetura.com</span>
+          <button class="btn" type="button" id="copy-mail" style="margin-top:8px;padding:10px 20px">Copiar e-mail</button>
+        </div>
+        <div class="c-item">
+          <span class="t">Telefone · WhatsApp</span>
+          <span class="v">+55 19 98176-4023</span>
+        </div>
+        <div class="c-item">
+          <span class="t">Onde estamos</span>
+          <span class="v">São Paulo · SP</span>
+          <p class="muted" style="font-size:.92rem">Atendemos projetos corporativos e residenciais em São Paulo e em outras praças, conforme o projeto.</p>
+        </div>
+        <div class="c-item">
+          <span class="t">Primeira conversa</span>
+          <p class="muted" style="font-size:.95rem">Antes de enviar um orçamento, gostamos de conhecer a planta, o local e os seus desejos. Se tiver esses materiais em mãos, melhor ainda.</p>
+        </div>
+      </div>
+
+      <form id="contact-form" novalidate>
+        <div class="f-row">
+          <label for="f-nome">Nome</label>
+          <input id="f-nome" name="nome" type="text" autocomplete="name" required>
+        </div>
+        <div class="f-row">
+          <label for="f-email">E-mail</label>
+          <input id="f-email" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div class="f-row">
+          <label for="f-tel">Telefone</label>
+          <input id="f-tel" name="telefone" type="tel" autocomplete="tel">
+        </div>
+        <div class="f-row">
+          <label for="f-tipo">Tipo de projeto</label>
+          <select id="f-tipo" name="tipo">
+            <option>Residencial de alto padrão</option>
+            <option>Corporativo / workplace</option>
+            <option>Outro</option>
+          </select>
+        </div>
+        <div class="f-row">
+          <label for="f-msg">Sobre o projeto</label>
+          <textarea id="f-msg" name="mensagem" placeholder="Localização, metragem aproximada, prazos e o que você espera do espaço"></textarea>
+        </div>
+        <button class="btn solid" type="submit">Enviar mensagem <span class="arrow">→</span></button>
+        <div class="form-ok" id="form-ok" hidden>
+          <strong>Mensagem registrada.</strong>
+          <span>Para garantir o retorno, envie também um e-mail para <b>contato@laruarquitetura.com</b> com essas informações — respondemos em até um dia útil.</span>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="dark cta-band">
+    <div class="wrap">
+      <p class="eyebrow">Enquanto isso</p>
+      <h2 class="h2">Veja o que já conduzimos<span class="dot">.</span></h2>
+      <a class="btn on-dark" href="projetos.html">Conhecer os projetos <span class="arrow">→</span></a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-top">
+      <div>
+        <img src="img/logo-light.webp" alt="la.rú arquitetura">
+        <p style="margin-top:18px;font-size:.92rem;max-width:30em">Arquitetura conduzida por relações de confiança, critérios bem definidos e atenção ao que realmente importa em cada projeto.</p>
+      </div>
+      <div class="f-col">
+        <span class="t">Navegação</span>
+        <a href="index.html">Início</a>
+        <a href="projetos.html">Projetos</a>
+        <a href="sobre.html">Sobre nós</a>
+        <a href="contato.html">Contato</a>
+      </div>
+      <div class="f-col">
+        <span class="t">Contato</span>
+        <span>contato@laruarquitetura.com</span>
+        <span>+55 19 98176-4023</span>
+        <span>São Paulo · SP</span>
+        <a class="ig" href="https://www.instagram.com/la.ruarquitetura/" target="_blank" rel="noopener" aria-label="Instagram da La.rú">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.6" cy="6.4" r="1.3" fill="currentColor" stroke="none"/></svg>
+          Instagram
+        </a>
+      </div>
+    </div>
+    <div class="f-bottom">
+      <span>© 2026 La.rú Arquitetura e Design</span>
+      <span>Laís &amp; Rúbia</span>
+      <span>Desenvolvido por Grid &amp; Grain Creative</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const btn=document.querySelector('.menu-btn'),nav=document.querySelector('.nav');
+  btn.addEventListener('click',()=>{
+    const open=nav.classList.toggle('open');
+    btn.setAttribute('aria-expanded',open);
+  });
+  nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+
+  const form=document.getElementById('contact-form'),ok=document.getElementById('form-ok');
+  form.addEventListener('submit',e=>{
+    e.preventDefault();
+    if(!form.reportValidity())return;
+    ok.hidden=false;
+    ok.scrollIntoView({behavior:'smooth',block:'nearest'});
+  });
+
+  document.getElementById('copy-mail').addEventListener('click',async ev=>{
+    const b=ev.currentTarget;
+    try{
+      await navigator.clipboard.writeText('contato@laruarquitetura.com');
+      b.textContent='E-mail copiado';
+    }catch(_){
+      const r=document.createRange();
+      r.selectNodeContents(document.getElementById('mail-text'));
+      const s=getSelection();s.removeAllRanges();s.addRange(r);
+      b.textContent='Selecionado — copie com Ctrl/Cmd+C';
+    }
+    setTimeout(()=>{b.textContent='Copiar e-mail'},2500);
+  });
+</script>
+</body>
+</html>
